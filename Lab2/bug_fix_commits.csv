@@ -1,0 +1,713 @@
+#,Message,Parent #,Merge Commit,Modified Files
+c02a213f8ea8d8873e8045a089fae4ac2637b8b4,scoring.py: Handle entries without initial_reset_timestamp,bd36a91603d5fe10ae6442ad41d264fabea44a32,0,scoring.py
+1c816c9fe4c6cf3986890f0a19142bb3c3b08a8f,scoring.py: Handle entries without initial_reset_timestamp,f9422ad0c6685ac27d7c76a5655fc7a3739c91e0,0,scoring.py
+2c0b6cfbad8cd8a8067a50c3e15279e4d699d0bd,fix typo in cloning installation,a1e0c2519ef12190727c035ebee3a798f8b5d31f,0,README.rst
+bcfefce9a091307596752e4585457659a1a19590,"Merge pull request #2 from domluna/fix-cloning-typo
+
+fix typo in cloning installation",a1e0c2519ef12190727c035ebee3a798f8b5d31f,1,
+fa61141a57676b11cab3b0df135fa6898b97abac,Raise a better error for a missing pyglet,bcfefce9a091307596752e4585457659a1a19590,0,rendering.py
+ed2c3a1fdc36bc60cbe34f94efbb213e942755bb,README: Fix package name,7d2630b82ef74b04c3a03a6b774a8f7c485a1c58,0,README.rst
+cf54e97686dcff5650a04bd82dda7cdc68943bc2,"Fix Tensorflow capitalization
+
+Fixes #5",ed2c3a1fdc36bc60cbe34f94efbb213e942755bb,0,README.rst
+5065950a09d2b701907a73cdc405078049312b92,Fix Python3 compat of import dependencies,7d2630b82ef74b04c3a03a6b774a8f7c485a1c58,0,algorithmic_env.py;atari_env.py;go.py;rendering.py;registration.py;test_envs.py;frozen_lake.py;taxi.py;video_recorder.py;api_requestor.py;resource.py
+5c371ec620316ddfabe89a840392109ede818df5,Bump atari-py to fix the Atari errors,1fd5af8b4ee7003ad41c8b2da386e2badb73589b,0,setup.py
+e8cf5f356cacceb1162115b1b908e19bb4b02de6,Fix missing StringIO import,5c371ec620316ddfabe89a840392109ede818df5,0,go.py
+dbde599c177b8f4655cbeb27021b198ad222204a,"monitor.py: Still write manifest if close errors
+
+Before, on a headless server I was losing manifests with:
+
+NullFunctionError: Attempt to call an undefined function glIsFramebuffer, check for bool(glIsFramebuffer) before calling (when closing Ant-v0)",cf54e97686dcff5650a04bd82dda7cdc68943bc2,0,monitor.py;test_monitor.py
+b742eaca13cae6ef04d58d3f7d2966ae94dbcdc2,Fix warning,dbde599c177b8f4655cbeb27021b198ad222204a,0,monitor.py
+8302c188de0f547a3d1b9fa45d8b34c5d647193c,scoring.py: Correct stats key,b742eaca13cae6ef04d58d3f7d2966ae94dbcdc2,0,scoring.py
+3df9a580f73b0b80329efa378346da5fd7562e4e,Fix #9. compatibility for tostring and tobytes,0b34c296b1616aac0e84e6614055b4d7c7f8687c,0,video_recorder.py
+d3d23f34555ab0f891d16b8a9118db300023b94c,"Fix readme example, documentation and error messages",0b34c296b1616aac0e84e6614055b4d7c7f8687c,0,README.rst;atari_env.py;go.py;mujoco_env.py;monitor.py
+cb9d219a7425797fb19df18780603a7e7423efa8,"Merge pull request #13 from dommueller/fix
+
+Fix readme example, documentation and error messages",a95d7188d6a61eb5e189e0bbc0b638f5ae1cbb4c,1,
+64b1b597dd892d61f9a2561fcea4404c7012f888,change exception to if statement to check numpy version,3df9a580f73b0b80329efa378346da5fd7562e4e,0,video_recorder.py
+b62415c19459d9e5819b82f464731b166157811d,Fix exception message formatting in Python3,c8f1fd8941df09dd042bbca10f26752dfded505a,0,test_registration.py
+f6db41be754fe6082343e045cf7b8db28ddcdb6e,minor fix with CreateBoard,317a2be9938cae4feda2373d77da455babf33237,0,go.py
+62a2b450691c1b4801e58fb00a42f10e603ae6b9,"Merge pull request #18 from sergii-gavrylov/patch-1
+
+minor fix with CreateBoard",317a2be9938cae4feda2373d77da455babf33237,1,
+1ba67baedd7c58f88de3b9b259b6ce8795b84b01,Fix typo,33f7c78a7c466d5a3acffb3abbebd3e29e162457,0,setup.py
+eb7e4c87356714848b3ce97c08a557567b1da991,Don't clumsily reraise exceptions,9dd2f9f3a347a8992c7d5c2e49fb46ae36cb51c9,0,registration.py
+c8ada04b340b6d308f7f9f8aa919fd83d2ff13fc,"Fix victory conditions
+
+Old victory condition was ""player is white and white wins."" Added ""player is black and black wins"" and ""opponent resigned.""",100bc82e381b87e9a74b8b6bbecd0b631dffe6aa,0,go.py
+cc0e865e58fa2b010a90076012004e5f8ca40aca,"Merge pull request #10 from carpedm20/master
+
+Fix #9. compatibility for tostring and tobytes",100bc82e381b87e9a74b8b6bbecd0b631dffe6aa,1,
+431043256bf928aa24b0cbc4cefbe939a9617b4d,rendering.py: Actually interpolate error message,cc0e865e58fa2b010a90076012004e5f8ca40aca,0,rendering.py
+bca1b3f913da499d8d2f366848f7584b03e768b9,Fix text env render encodings,bd63f7547eaabb3f0ca6a8d97e4a2e5efe26c0c8,0,frozen_lake.py;taxi.py;utils.py
+ffc0ea2a8104650a920aab524c8ddb58e5aefcb6,Fix reset to take initial value,35df2228096da723f30fb05c0f7c86c06bfd0d72,0,cartpole.py
+fc3c4e576a459fe213cd88c37c1f686eae0b18fc,Fix warning being raised incorrectly,ec92067852ad062b343a426214425cb9e3c4422d,0,cartpole.py
+f7012491df7c64f173f90e79270918e733546e62,"Merge pull request #25 from sherjilozair/obo_error
+
+Fix warning being raised incorrectly",de9551449f96e8bc11c4952794b46bb6e225cd20,1,
+4818e1e888de1b6628c653cafd27577b20512932,Fix PR building,de9551449f96e8bc11c4952794b46bb6e225cd20,0,.travis.yml
+e55b65af88fb3b79608e0aaee07c232fb873908b,Fix PR building,f7012491df7c64f173f90e79270918e733546e62,0,.travis.yml
+ea27839d6de3467094c419740d7cd7e60d43e6fc,"Merge pull request #23 from dommueller/fix
+
+Fix example agent",e55b65af88fb3b79608e0aaee07c232fb873908b,1,
+f391a3b6d8bf98a294d975fd11261ae9177a159a,"Merge pull request #29 from wb14123/fix-readme
+
+Add quotes to pip install packages",473cfc149a600761be5d74e2adb291c0df79be85,1,
+2dbdaddf93701c751a46da5b877d077b35ae44f6,"Merge pull request #20 from aforr/gym-go
+
+Fix victory conditions",f391a3b6d8bf98a294d975fd11261ae9177a159a,1,
+2a3c46da319cb99f9ebec6ff9046c6fef59ba9da,Fixed typo,d0132e6b4c8858413905f197307353cfb829cf76,0,README.rst
+47f7f3d360449b5755fd5543594618cb3ee5f9a7,"Merge pull request #31 from radarhere/patch-1
+
+Fixed typo",d0132e6b4c8858413905f197307353cfb829cf76,1,
+fd18ec35072a2eff2a77de61e9fbc48fe8eaf565,"Merge remote-tracking branch 'origin/master' into py3
+
+Conflicts:
+	gym/envs/atari/atari_env.py",8884b46c18b0a8792d5d9e3f32c665f7c9ed650a,1,
+0e31b5b19b30165a43906686ab81f096888346b5,Fix mujoco skipping,4818e1e888de1b6628c653cafd27577b20512932,0,test_envs.py
+5983160fc80afb7a53346e7cd954128c2baa6ad7,"Merge pull request #32 from openai/gdb
+
+Fix pull request testing",47f7f3d360449b5755fd5543594618cb3ee5f9a7,1,
+02ea974114168fe0d6fbcc1c6c63e6e7a0a86551,Fix README structure,f7f126b95e945d8fe370335b0134a1d6f52381f9,0,README.rst
+88ee05f1e01748ce778fa6686b2f6b04ade00db8,fix 'EnvSpec' object has no attribute 'entry_point' when PR (#30),02ea974114168fe0d6fbcc1c6c63e6e7a0a86551,0,
+8c864953a4620b89a285bac043669b23c36b2c5e,Disable Python 3's exception chaining when reraising,4e575e7103c9f8d2429e57ebd39bb1bfcb3651a9,0,reraise.py;reraise_impl_py3.py
+2030bd46f5f46571857e2661a09c38c26ded9e5a,fix two fix two remaining instances where model.data.qpos/qvel are set directly,3d9ad4f71c6e0f1696b683739a2f4946988b4126,0,inverted_pendulum.py;reacher.py
+795640dfe833fe3447b8e381f3ed890d05e9fc41,fix mujoco _reset method,fbb60333b537e79ccb8b0595ca78109bd122f41e,0,mujoco_env.py
+7b919677c3ad1df876e2e621bcde59097abec149,fix InvertedPendulum,795640dfe833fe3447b8e381f3ed890d05e9fc41,0,inverted_pendulum.py
+db875aa7e4cc2a1ec0bb37b6f335d6b5d51e00f8,Disable 3.5 while tests non-deterministically crash,35ac7c3f74d62e0ffe3e7c811f4a5aaf671ce804,0,.travis.yml
+138c1eafad867e203259520c36ff0deb14a038bb,"Merge pull request #44 from lukemetz/lm/errors
+
+added missing import",db875aa7e4cc2a1ec0bb37b6f335d6b5d51e00f8,0,__init__.py
+6acd9e55a42799280ad9b9b8a40b09cf0f3f74e4,Correctly handle absent prefix/suffix in reraise,d22f96525ff0e8f0310b7d7823ba4ab2e4b14bb3,0,reraise.py
+e45f945afd5de39e50afc26ba2d70f6b2a33e86e,"Python 3 encoding fixes
+
+Closes #43.",e74ed45f56d6fa146d785b88310fbfd6003b81e2,0,video_recorder.py;api.py;http_client.py
+b69df1b5f33db855a415855f6595045c1b761404,fix subsampling of videos,cd65b7ecd08ff9470a51a0be80675b3fa882ed7a,0,api.py
+386096f60a31acb982b84d225c307f99f3c2cd00,rendering.py: 'color' keyword argument handling fixed,cd65b7ecd08ff9470a51a0be80675b3fa882ed7a,0,rendering.py
+a065d5ce7bbb764b1cce7c6f84af998314ebc48f,"Fixed typo (#49)
+
+fix 'outut' to 'output'",b69df1b5f33db855a415855f6595045c1b761404,0,random_agent.py
+f478aa7971412c46a501ffe7b42020a71231cbf7,Fix PR tests,a065d5ce7bbb764b1cce7c6f84af998314ebc48f,0,test_envs.py
+9e716416e13084986fd3b2ed06fc8e4765953095,fixed bug (frame_shape -> frame.shape) (#50),f478aa7971412c46a501ffe7b42020a71231cbf7,0,video_recorder.py
+c62b2da337a55d073567943cd084933985fa0df2,"A few compatibility issues with python3 resolved.
+Fixed lot's of issues with the HexEnv.
+Added Hex9x9-v0 to registry",59a374f0234c37ac4542e4b206e403cdf34c0899,0,__init__.py;go.py;hex.py;rendering.py;video_recorder.py;api_requestor.py
+e7f77415481f5e212660afdca51607284d26f42f,Same fix for Go for StringIO,c62b2da337a55d073567943cd084933985fa0df2,0,go.py
+78d853a2f348c1c0422bd4f4cc9580b829b17047,Fixed step return objects in README.rst (#58),4519a6ffe377ccf370e507c705709bc673c904d5,0,README.rst
+95a0151f139cf3eb8331550c710fbd821e9ec222,"Issue 45 - Easily return environment score values (#57)
+
+* Set restriction on selected actions
+
+* Used self.action_space instead of custom set
+
+* Move action validation to core.py
+
+* Added env.score() function to return current score
+
+* Set up multi monitor scoring
+
+* Removed unneccesary package inclusions
+
+* Monitor writes scores automatically. Video callable can now use monitor_id
+
+* Monitor ID not necessary for video filtering
+
+* Fix so final stats get written when env.reset() doesn't happen
+
+* gitignore PyCharm Project Files",9a0a1af5b5782bbdfaeb5cb3b3e84a4c485346e5,0,.gitignore;monitor.py;stats_recorder.py;scoring.py
+8781f6d623bf63b7ba2f4e27c2007bd555329b15,"Fix flushing of final episode in monitor
+
+Thanks @JKCooper2.
+
+We also change to getting the PID at monitor construction time, rather
+than at runtime. This means you need to start your environments
+post-fork, which should be fine.",21169ef6203de9fab03ac131fe89053f0b59286e,0,monitor.py;stats_recorder.py
+b37495355e2bd90479c9e391aa951b9a9aebb1b6,Handle deprecated envs better,8781f6d623bf63b7ba2f4e27c2007bd555329b15,0,registration.py;test_registration.py
+efb0a45941e4688ff1bed06e68615dc29d15683e,fix taxi (upgrade -> v1). non-functional changes to frozen lake,322433ecffd5cbd1a88a7f8f49146f5fef85d6fe,0,__init__.py;discrete.py;frozen_lake.py;taxi.py
+fcff2a67605037a61fe7dc021844d96bb809880e,"fix taxi-v1 (issue #72)
+- disallow start location = goal location
+- north/south swapped in descriptions",81a4c3e57c4d063b789600dad32728ef49516e75,0,taxi.py
+168f25b976010dce9f50a033673fae7a4b3142c7,"Fix Python3 compatibility in Go env (#64)
+
+Under Python3, user inputs are in string format and needs be
+converted
+into bytes before passing to pachi-py. The returned __repr__ from
+pachi-py for the boards are bytes and needs be converted into string
+for
+line breaks to work.
+
+Also fixed raw_input and print functions in play_go under
+examples/scripts with six package.",a20719c8e3a021a7a0f2d27c7b61e8eae5779600,0,play_go;go.py
+5efb1c37a975c641df7ff8729a2f630e7e7c0610,"Blackjack environment from Sutton & Barto textbook (#60)
+
+* blackjack environment from sutton & barto textbook
+
+* blackjack: dumb agents can hit at 21
+
+* blackjack: add natural (Casino Rules) flag
+
+* blackjack: style and whitespace fixes
+
+* blackjack: simplify reward calculation",db08326d467f1695b551df567fd62679223103f9,0,__init__.py;__init__.py;blackjack.py
+6bb2d56266ae6679c2fb2336b31769a4133400d7,Minor Python3 compat fixes,cda4518b1ebb3e1e5f816d39129d20ac33ea8ff3,0,bipedal_walker.py;lunar_lander.py;blackjack.py;frozen_lake.py;registration.py;test_registration.py
+24c352f2959ca79aa5f1322fa25e00e1fac8724f,Fixed description.,cae8f746c641df1c3956272de7a76c73f8f0240a,0,__init__.py
+9287889214edd5836b0eea153e81de21b9698f17,"Merge branch 'master' into pr/53
+
+# Conflicts:
+#	.gitignore
+#	gym/envs/board_game/go.py
+#	gym/monitoring/video_recorder.py
+#	gym/scoreboard/client/api_requestor.py",e7f77415481f5e212660afdca51607284d26f42f,1,
+fc17cc53e43f0174202267a09b67ab0e3ed87c97,"Fixes for pr/53
+
+Add task to scoreboard. Fix HexEnv._render for python 2",f094e7d763792511866f513dc653d5efcc468d70,0,hex.py;__init__.py
+fb3367ff9ec4be27c3f43abc33c5df1929c8b144,Fix typo,fc17cc53e43f0174202267a09b67ab0e3ed87c97,0,hex.py
+da29f0f2f6a0cab126658931cdf1b60835005976,"Fix observation_space for BipedalWalker (#84)
+
+* Fix observation_space for Bipedal_walker and add warning if observation doesn't fit observation_space
+
+* Remove observation state check on reset.
+
+Multiple environments call reset before action and observation spaces
+are initialized.",fb3367ff9ec4be27c3f43abc33c5df1929c8b144,0,core.py
+7c9c26da8c089cd34737ccd17402f4f6ca4585f3,Fix hex instantiation,da29f0f2f6a0cab126658931cdf1b60835005976,0,hex.py
+d2d940bddb6b39a7cc458700daaf0f3b9e9850aa,"Cartpole observations can occur outside of observation space limits - Issue #88 (#89)
+
+* Set restriction on selected actions
+
+* Used self.action_space instead of custom set
+
+* Move action validation to core.py
+
+* Fix for Cartpole observations outside of observation_space",7515b132921ea924fa0b857a39b079a513de1401,0,core.py;cartpole.py
+7c5b96211092dd99d00be057a68a212c243db4fb,scoring.compute_graph_stats Default return and fix import statement (#90),d2d940bddb6b39a7cc458700daaf0f3b9e9850aa,0,scoring.py
+ba9fd3435ef7a166554066f06ad59c08aff45205,bipedal_walker: trivial fixes (#93),892485a3ffd3e5bc59457e4a535c7746ae4a4e76,0,bipedal_walker.py
+2ae0dbc846469aeb6ac0d3890f1453e6df8f79f6,"Discard viewer object after render with close=True
+
+Fixes #95",064f7377d9eb8c9c97fb418f1cceeb9efd4dad1b,0,atari_env.py;bipedal_walker.py;lunar_lander.py;acrobot.py;cartpole.py;mountain_car.py;pendulum.py;mujoco_env.py;test_envs.py;__init__.py;helpers.py;test_monitor.py;test_monitor_envs.py
+9d99853692ad8c169b491e382b711ee6fe56c809,"Fix FrozenLake for Python3
+
+Fixes #76",549b5472764acfb87cccbdeb2c06ae2e75e75f34,0,frozen_lake.py
+91413a97684ee20479ca5ca56f558a85295efc9d,"Upgrade pyglet to a base dependency
+
+Fixes #85",8064d994efe43d5277cb8871c0cc92162c082366,0,setup.py
+c2587d2bb76c3ab1b882872328caf89a76fd0b36,"BipedalWalker, LunarLander heuristic, retuned (#101)
+
+* bipedal_walker: trivial fixes
+
+* lunar_lander: heuristic test code, renormalized and tested reward, longer state vector
+
+* bipedal_walker: heuristic test code, renormalized and tested reward, legs contact with ground in state vector
+
+* bipedal_walker: description text",91413a97684ee20479ca5ca56f558a85295efc9d,0,__init__.py;bipedal_walker.py;lunar_lander.py
+72d29a52f600ac1981c5ccbab4d752dee500049f,"Make close() idempotent, add tests, minor fixes",751dcc15b10cc45122486e5238626c160b51e752,0,core.py;registration.py;test_envs.py;atexit_utils.py;test_atexit.py
+163fc3ec821f9253d36af8463a2550dc8427fc79,Cleaned up the code and fixed unintended renaming of algorithmic environment(my IDE has gone wild with renaming during some refectoring I assume),166e296993c6406b5187b46d00ce56e5f1c3608a,0,.project;.pydevproject;algorithmic_env.py;artificial.py;convergence.py
+7371debe38da7f6dc2c1403528db6e42e7238706,Small fix to imports,163fc3ec821f9253d36af8463a2550dc8427fc79,0,__init__.py
+a6b5d7aa36338485dea74b734c7925b6ef02b89e,Fix registration test,b92796ae890ba388050b047cd8ad8c579407bd74,0,test_envs.py
+75c49eb2f3619433eb42ce898f25de40f40862bb,Fix mujoco for PRs on the openai repo,a6b5d7aa36338485dea74b734c7925b6ef02b89e,0,.travis.yml
+edaf643c57e8981c7e8b1e1c07482cb4bef6ae06,"Remove deprecated env file, report different error for deprecated envs",75c49eb2f3619433eb42ce898f25de40f40862bb,0,__init__.py;deprecated.py;registration.py;error.py
+2d45775e3823cf5a27df92350cbc89963aecc84c,Fix broken registration test to handle new DeprecatedEnv error,90979cf11fe96ed69c41b20eb439b761a630dfd2,0,test_registration.py
+0b2b41cc5728674f56f8bc1d652c130034cf1498,Fix typo (doom-py -> doom_py),183e3bb3350fcbab4a2f77557c78a650237ca131,0,setup.py
+93ef47a91ba726b37473f040d3c405fd78eb28f6,fix .travis.yml for Doom,a3a24fb5be52c99c9a0f49a0f76976e30291edff,0,.travis.yml
+3eb58ffcfb84895dd8af76313faf72eca593cd8e,Fix exception name with new vizdoom,a48e6a01882d9f60bf2a2468a805fedd1ed7383f,0,doom_env.py
+69d1115861d8c98726cbc11ca39df3e1083517e9,Fix human rendering for doom as well,bbc0d71ebe6ac372b1fb1b357498760a6552a254,0,doom_env.py
+48c689efea7109f1d194a57fc232cab05e1cef3a,Fix action space warning (fixes #108),c77a90ebd88d6f72f78ceba9072c2c16a8cef157,0,core.py
+a50113a3a277c07104fe8964ab8f89bc779fb898,Handle draw in go env (#97),4a4b56171cb669591ff52e533dfccf55ed365daf,0,go.py
+17dd787c0bbe72e3a7a001971cdfb70dc7166fd6,Fix for #114 (#118),df515de07d0a0767b1b3c8c79e0c1386e0c3f172,0,bipedal_walker.py;lunar_lander.py
+7d72afd2f0f666d95a638cdc11d17bb9f6f1de06,Fix crash bug in DoomDeathmatchEnv,17dd787c0bbe72e3a7a001971cdfb70dc7166fd6,0,deathmatch.cfg;doom_deathmatch.py
+40997b911881df683082b19e496a8922ea8d0c7f,atomic_write.py: Handle missing destination file on Windows,a0d02882c2759df32d1a743b63f54bce4705f20a,0,atomic_write.py
+8376580c85417b1f1cd2bf0a1a3ae9f5f07b32e3,"Improve closer implementation and docstrings (#126)
+
+* Improve auto close implementation
+
+- Register all envs at initialization time, not just ones created via make
+- Simplify names and add more documentation on interface
+- Move closer instances into the relevant modules
+
+review-requested: @jietang
+
+* Close environments in the tests
+
+This isn't strictly needed, but means there are fewer Doom
+subprocesses hanging around while the tests run.
+
+* Use 4 space indent in comment
+
+* Improve docstrings in core
+
+* Don't pass through args to __new__
+
+The __init__ method gets called once __new__ returns,
+so these arguments are either ignored (Python 2) or
+result in an error (Python 3). The __init__ method
+automatically gets called with the correct arguments.
+
+* Fixup comments",eb8a9baaa3f756077ef393c8e3774a4b6bc6cc9a,0,core.py;registration.py;test_envs.py;monitor.py;test_monitor_envs.py;test_core.py;atexit_utils.py;closer.py;test_atexit.py
+2e26518b4fe53d4f292a666f63d71f68545f2924,"Fixes tar file generation for upload on Windows (#129)
+
+* Fixes tar file generation for upload on Windows
+
+The temp file cannot be added to the tar while open on Windows.
+
+* Update api.py
+
+* Rewritten with try..finally
+
+* Fix indent.",56ac98a841acbed2887c06593347804a8c789ee8,0,api.py
+5c8e34029deedb0b04fb70ea94f2eecba2b2016c,Fixes according to feedback to pull #104,7371debe38da7f6dc2c1403528db6e42e7238706,0,test_tuning.py;test_envs.py;__init__.py;setup.py
+53c0446a37f56d523a40b21aa41128a7bc8b4768,Small additional fixes,5c8e34029deedb0b04fb70ea94f2eecba2b2016c,0,convergence.py
+3e32cf20b9408ecc20a4f5c3642354718c59bb5a,small fix to the dataset size selection,53c0446a37f56d523a40b21aa41128a7bc8b4768,0,convergence.py
+58e6aa95e5af2c738557431f812abb81c505a7cf,"[WIP] add support for seeding environments (#135)
+
+* Make environments seedable
+
+* Fix monitor bugs
+
+- Set monitor_id before setting the infix. This was a bug that would yield incorrect results with multiple monitors.
+- Remove extra pid from stats recorder filename. This should be purely cosmetic.
+
+* Start uploading seeds in episode_batch
+
+* Fix _bigint_from_bytes for python3
+
+* Set seed explicitly in random_agent
+
+* Pass through seed argument
+
+* Also pass through random state to spaces
+
+* Pass random state into the observation/action spaces
+
+* Make all _seed methods return the list of used seeds
+
+* Switch over to np.random where possible
+
+* Start hashing seeds, and also seed doom engine
+
+* Fixup seeding determinism in many cases
+
+* Seed before loading the ROM
+
+* Make seeding more Python3 friendly
+
+* Make the MuJoCo skipping a bit more forgiving
+
+* Remove debugging PDB calls
+
+* Make setInt argument into raw bytes
+
+* Validate and upload seeds
+
+* Skip box2d
+
+* Make seeds smaller, and change representation of seeds in upload
+
+* Handle long seeds
+
+* Fix RandomAgent example to be deterministic
+
+* Handle integer types correctly in Python2 and Python3
+
+* Try caching pip
+
+* Try adding swap
+
+* Add df and free calls
+
+* Bump swap
+
+* Bump swap size
+
+* Try setting overcommit
+
+* Try other sysctls
+
+* Try fixing overcommit
+
+* Try just setting overcommit_memory=1
+
+* Add explanatory comment
+
+* Add what's new section to readme
+
+* BUG: Mark ElevatorAction-ram-v0 as non-deterministic for now
+
+* Document seed
+
+* Move nondetermistic check into spec",2e26518b4fe53d4f292a666f63d71f68545f2924,0,.gitignore;.travis.yml;README.rst;random_agent.py;configuration.py;core.py;__init__.py;algorithmic_env.py;copy.py;duplicated_input.py;repeat_copy.py;reverse.py;reversed_addition.py;atari_env.py;go.py;hex.py;bipedal_walker.py;car_racing.py;lunar_lander.py;acrobot.py;cartpole.py;mountain_car.py;pendulum.py;doom_basic.py;doom_corridor.py;doom_deathmatch.py;doom_defend_center.py;doom_defend_line.py;doom_health_gathering.py;doom_my_way_home.py;doom_predict_position.py;doom_take_cover.py;ant.py;half_cheetah.py;hopper.py;humanoid.py;humanoidstandup.py;inverted_double_pendulum.py;inverted_pendulum.py;mujoco_env.py;reacher.py;swimmer.py;walker2d.py;registration.py;test_determinism.py;test_envs.py;blackjack.py;discrete.py;frozen_lake.py;nchain.py;roulette.py;taxi.py;error.py;monitor.py;stats_recorder.py;api.py;box.py;discrete.py;high_low.py;seeding.py;test_seeding.py
+8cbcc698163d883ffca39c31fa39af3e2b6cbe94,Fix argument to env registration,58e6aa95e5af2c738557431f812abb81c505a7cf,0,__init__.py
+fa94d301564fe2e31cabd3440224c9a373104fd0,Fix other nondetermistic -> nondeterministic,8cbcc698163d883ffca39c31fa39af3e2b6cbe94,0,test_determinism.py
+fb9b3914648fe79e24c0ca08104da09514ef46f4,Fix summary of environment,3e32cf20b9408ecc20a4f5c3642354718c59bb5a,0,__init__.py
+0c5a7d091a4c671ba49fd5b76f4a17a377b91d0d,humanoidstandup fix,6876c30f92f2f3cf83864795df6df878f1a4fdc2,0,humanoidstandup.py
+7de864b31b11cb4afa215db47c6484ea99b3841e,Fix #137: don't open car racing window on reset,641cb3d2d26577e4e0919ee4d92291cce1173765,0,car_racing.py
+5597dddc552ada561208d66acff8e854c5623332,Fix mountain car rendering (#147),7de864b31b11cb4afa215db47c6484ea99b3841e,0,mountain_car.py
+b235a102aaea20efeb75093c05dedac7449fbc5f,Fix the reward when diverged,e0421ae5c5b8ea056a54eb9422bfb1d3f9cbef39,0,train_deep_cnn.py
+1635a46c7f9d7f7c4c0400d499424e9282b6a681,"Improved description of cnn classif environment, made some fixes to env itself",aa77679d4b1125bf555aaf7cb7c5ebe76829a85b,0,train_deep_cnn.py;__init__.py
+d5bfb848bb38e3d44f53b07784918df5ceedf5dc,Fixed shape of observation,1635a46c7f9d7f7c4c0400d499424e9282b6a681,0,train_deep_cnn.py
+74f0f545e39d4da6974f6c48e066c65ad96b96fc,Add Doom to README.rst (Fix #136),5597dddc552ada561208d66acff8e854c5623332,0,README.rst
+4ddee9b2d35bd516e5759db60c92d827c25c94ef,Suppress warning from deathmatch.cfg (Fix #130),74f0f545e39d4da6974f6c48e066c65ad96b96fc,0,deathmatch.cfg
+eb998c746a8fadb8018cfbc18b961f818fffb998,"add swig to the list of dependencies to be installed with homebrew (#146)
+
+Without this installing box2d on OSX fails with:
+    unable to execute 'swig': No such file or directory
+    error: command 'swig' failed with exit status 1""",4ddee9b2d35bd516e5759db60c92d827c25c94ef,0,README.rst
+7cbc24ba0826d1a7a20c4ab45dc47fb3f008eb51,Fix failing DoomDeathmatch test (altattack -> alattack),da6ad52196ec69d6047e9c44a410fef95fa2b003,0,deathmatch.cfg;doom_deathmatch.py
+81a99013bc344212e4847cd020757531f98e5870,Fix car_dynamics import,43992f47522e906194d8691bd0ad42b2cb0e1a9b,0,car_racing.py
+0079589bbc334b0814267f5d493d03e2f800b4c6,"Update README.rst (#158)
+
+Fixed LunarLander version in code sample.",491cbca5afb3fa8e3b10447b6751ec0c0acb9113,0,README.rst
+c183708a5224f4c2912a1c7939ebdad79a289237,Correct self -> env,790f02e4713ede9592dcd882a949e7676e995c7a,0,core.py
+e759526268ec8d698fbdd315829d395c88024b6d,Handle monitor close better,c183708a5224f4c2912a1c7939ebdad79a289237,0,core.py;monitor.py
+7605986f099dd0ebcfee3b6806bac857e26da2b5,Push up x_threshold to silence warnings: fixes #88,116b03144cc21e1e969da7e871fc9d0964c169e9,0,cartpole.py
+a1f80e2fa9eb9bf51c7e1be50867abfe2ad4936b,"Only create ~/.mujoco if MUJOCO_KEY_BUNDLE is set
+
+This will fix PR builds. CF:
+
+  https://github.com/openai/gym/pull/171/files/37b87ccba6302b442eae940b74539a3f56dd36ef#r66727379",c784b71aedb5fa459b1e437a7d258c16efc9accc,0,.travis.yml
+0df07849e7198dcc88a560a25d2ca219482414f3,Fixes reset states for 2 interpretability envs (#180),93e49ba2c81e08489de056e0e771bfb61748ab23,0,interpretability_cartpole_actions.py;interpretability_cartpole_observations.py
+af5bb400fefceec7ad197ee5a12905982a401a7a,"trivial fix for #143 (#187)
+
+* trivial fix for #143
+
+* #143 same fix for other environments, not really necessary, but still",2aa03d6088e6a7d95c68da6d7d229b17243bc121,0,bipedal_walker.py;car_racing.py;lunar_lander.py
+aff7a643cc67c7c7a3a9d9a705dda803072807d7,"Doom - Same Action Space Across Environments (#157)
+
+* Doom - Added reward_threshold and timestep_limit for all environments
+
+* Doom - Returning all available game variables
+
+* Doom - Moved _seed to doom_env to avoid repetition in every environment
+
+* Doom - Added ALT_ATTACK and made all action_space equivalent (same controls between environments).
+
+* Doom - Actions can either be a short list of allowed actions or the full list of 41 commands
+
+* Doom - Returning black observation space on error or is_finished, rather than empty list (which was triggering an error)
+
+* Doom - HighLow.sample() returns the small list.
+
+* Doom - Updated difficulty for some missions
+
+* Doom - Fixed inconsistency between controls.md and deathmatch.cfg
+
+* Doom - Issue #168 - Remove sleep statement from DoomEnv render
+
+* Doom - Only using full action space (43 keys)
+
+- Added 'normal', 'fast' and 'human' mode
+- Set non-deterministic to True
+- Set video.frames_per_second to 35
+- Properly returning game variables
+
+* Replaced warnings.warn by logger.warn
+
+* Doom - Added NUM_ACTIONS and action_idx instead of x
+
+* Doom - Added NUM_ACTIONS and action_idx instead of x
+
+* Doom - reset() only calls game.new_episode() after first call
+
+* Doom is now deterministic
+
+* Doom - Partial fix for issue #167 - DoomDeathmatch environment crashes sporadically
+
+* Doom - Standardized envs, simplified _reset
+
+* Doom - Removed temporary fix for issue #167
+
+* Doom - Added scoreboard summary and description",5b8603066c104f10df9cc197ed985a852215f260,0,__init__.py;basic.cfg;deadly_corridor.cfg;deathmatch.cfg;defend_the_center.cfg;defend_the_line.cfg;health_gathering.cfg;my_way_home.cfg;predict_position.cfg;take_cover.cfg;controls.md;doom_basic.py;doom_corridor.py;doom_deathmatch.py;doom_defend_center.py;doom_defend_line.py;doom_env.py;doom_health_gathering.py;doom_my_way_home.py;doom_predict_position.py;doom_take_cover.py;test_envs.py;__init__.py;discrete.py;high_low.py;__init__.py
+5372d34b37bf500b0017bef4b234849c937c1529,"Fix failing tests by making safety cartpole envs contain a cartpole rather than
+inheriting from it",8a545eeb5942801d94dbd36e7d8be4c696d4bdd7,0,predict_actions_cartpole.py;predict_obs_cartpole.py
+0d5312e8359ed7fce3b307d947f056da5124903e,fixes error in safety envs description of pendulum problems (#208),a46972cf8d6dd3693bf95d3765c465338e69dc5e,0,__init__.py
+a7e5a581dc0b9c4224622df438734612045cefd8,scoring.py: Avoid NaN when computing standard error,ad4930c812afb494048ca821fe439369a3f41bd3,0,scoring.py
+1e86e73919117e94bdbc843989fe9aff0c020814,fixes cartpole observation_space (#210),f59ec3d2872e84865b6020bcbb6b0eae0b77dcb4,0,cartpole.py
+e5be288d3a97090644924d004603ab5ec6aff29c,"Minor fixes to CEM:
+
+* Take gym environment as command line argument
+
+* Call seed
+
+* Fix reference to RandomAgent -> CEM",1e86e73919117e94bdbc843989fe9aff0c020814,0,cem.py
+c8047fe5348e367f4b4188763b667c0e769d49c8,Use correct logger,a882c6198388fb5fb103a14b3737f4b15176c8ca,0,http_client.py
+3ae443efb4cf586a3d48dbb78c75e57befe3fb9b,fix minor docstring typo in gym/core.py (#225),f5f260129d1675654ef2c36c50cad91899c2f861,0,core.py
+7708cf2bcbb38a184ebb6df5a6739d94d5d2fe17,"fixed global variable reference when ssl verification is off (#230)
+
+* fixed global variable reference when ssl verification is off
+
+* moved 'global warned' to inside the function",15afd9c54aab0fb3d69028045093df20c81c07e3,0,http_client.py
+a50a41f1c7dda6f91354a996a8c7775f7a456b1a,Handle pyglet windows of unexpected size,7708cf2bcbb38a184ebb6df5a6739d94d5d2fe17,0,rendering.py
+4be4b15b03b9a0f810921a921e9132e2b5734794,Fixed bug in scoring in meta-doom (#242),df31701a74763e291487a1dde40f60b995f7e6a0,0,doom_env.py
+466da849b75bd5bf2bb004340bdec3cbf8635ef3,Issue #243 - Invalid action space for DoomDeathmatch-v0 (#245),4be4b15b03b9a0f810921a921e9132e2b5734794,0,deathmatch.cfg;doom_deathmatch.py;doom_env.py
+216d90fc9179b1f4b52f61b4e959b510ec132c20,"Merge pull request #271 from ppaquette:ppaquette-broken-build-20160803: Fix Travis build
+
+* Fixed broken build - nose2 module incorrectly imported from
+
+* Removed tox from travis.xml, readded nose2 to tox.ini",c2f70d0656311a25442f444b14c462feedde4866,0,.travis.yml
+c4317fc5f942c31ecfc05c6ddb580cc71f09ac3c,Handle bad configure calls more nicely,1d6a849c6d18ec6ff6ffac581035e30fe03a05c2,0,core.py
+b46f30dd4bc20b0f6e0a0d1ef91f46414a7a4f86,"Fixed quotes in NotInstalled error message (#261)
+
+s/.)'/'.)/ -- the quote accidentally went around too much.",e63f82d0edf6260bfbae82dd64dccee721789004,0,atari_env.py
+5ba5cb7e2dd7fb06412b0ba26fdba14127e87bbf,"minor changes to cartpole+acrobot, upgrade to v1 (#260)
+
+* change cartpole timestep limit to 500
+change acrobot to take cos/sin of angles, and increase timestep limit so it gets solved by random exploration
+
+* restore CartPole-v0
+
+* Oops, fix threshold on cartpole",b46f30dd4bc20b0f6e0a0d1ef91f46414a7a4f86,0,__init__.py;acrobot.py
+ba71635ccda348d2350ee7002e9377432e2665cb,Fix registration for new envs,5ba5cb7e2dd7fb06412b0ba26fdba14127e87bbf,0,rollout_py2.json;rollout_py3.json;test_monitor.py;__init__.py
+36b2a58b3f112c829f667029d77d84ab71325b89,Fix monitored env memory leak (#277),ba71635ccda348d2350ee7002e9377432e2665cb,0,monitor.py
+9337ab7bcad771ae4b264f3b97b223f18b004366,Fixed Issue #267 - Hex9v9-v0 does not behave as it should when there is a full game board. (#274),36b2a58b3f112c829f667029d77d84ab71325b89,0,hex.py
+ee7ba41b9a0142d434f90354617e8f77babf8d86,Docker - Minor build fix (#286),dda87dc9309a7d5c558c23d9820ed9e5be13663d,0,docker_entrypoint;test.dockerfile
+14f8c9a3f2dddf6b3f6bf2b4861174bf09739003,"Wrapper - Common frame skipping (#293)
+
+* Common frame skipping
+
+* Common frame skipping - Fixes
+
+* Raising error if skip.stepcount already in info.",cc1483deb1a5a10cb58fda75a0fc44ff84d39ca7,0,README.md;__init__.py;frame_skipping.py
+c6a3f6653771af69a15dcbc3221bb025cd96cc7d,log error in load_results,a74fcb5dd1c7e888a9c7048aa83436f13627fc64,0,monitor.py
+75b6d9993f674211385988518e41c4d7b37a5a41,minor fix,e2c9e84a51a994b879117a6bbbca700cc028c930,0,monitor.py
+932ed300f4757f97d91fe47c4cf65d0d008c2742,"Fix error when running min on empty list (#314)
+
+* Fix error when running min on empty list
+
+Running min on an empty list (which occurs on first episode from `if len(content['timestamps'])==0: continue`) causes it to throw an error
+
+* Update monitor.py
+
+Return 0 for initial_reset_timestamp when no initial_reset_timestamps",7f2a52bf19b56ce9a318cab9e39f84f419044a14,0,monitor.py
+c97551e8e545871cc0761d286c879c3175e76e0a,"added continuous mountain car v0 (#306)
+
+* added continuous mountain car v0
+
+* spotted that the action should be a vector, not a scalar
+
+* fixed bug on action format
+
+* bug fixed in scoreboard registering
+
+* the observation (aka state) should be a numpy array
+
+* added comment on reward range as requested",4b9984c00ea567ca8dd4ccd0176ca61bd2f4a3e8,0,core.py;__init__.py;__init__.py;continuous_mountain_car.py;pendulum.py;__init__.py
+934baaf900160497b57716c9568f183e381a6481,Fixes bug in comment (#262),ee2c0243c088dcdb749030f8b3fb60b718652449,0,two_round_deterministic_reward.py;two_round_nondeterministic_reward.py
+ebb2f2927388d90d266a13b0d713fe3765286fcc,"added ffmpeg to dockerfile and fixed test (#325)
+
+* added ffmpeg to dockerfile and fixed test
+
+* use ubuntu media repo for ffmpeg
+
+* ffmpeg on travis :cake:
+
+* install libav instead",a84edbc78b58b3598a5d3a73e24e8fd2fc1ab563,0,test_video_recorder.py;test.dockerfile
+46b48a8a4a80ac86c487b7433e841e800abd9524,"Fix Taxi-v1 for Python 3 (#327)
+
+* Fix Taxi for Python3
+
+* Update Taxi observations in the rollout",4e88d00e5e58f3a5912709fc3d223c47d6fb3d8a,0,rollout_py3.json;taxi.py
+934b2acbb78e7d0052fc79b5d3421b10aa74be40,"Add benchmark support (#338)
+
+* Warn if seed doesn't return a list
+
+* Add preliminary BenchmarkRun support
+
+* Add experimental benchmark registration
+
+* Flesh out interface
+
+* Add preliminary BenchmarkRun support
+
+* Warn if seed doesn't return a list
+
+* Add experimental benchmark registration
+
+* Flesh out interface
+
+* Make benchmarkrun upload recursive
+
+* Add evaluation episodes
+
+* Add benchmark scoring
+
+* Tweak reward locations
+
+* Tweak scoring
+
+* Clear default metadata in Wrapper
+
+* Improve scoring
+
+* Expose registry; fix test
+
+* Add initial_reset_timestamp
+
+* Add back algorithm; fix tests",0c8c055fcabf5ace5c5013183effb320f8ae1179,0,upload;__init__.py;__init__.py;registration.py;scoring.py;test_benchmark.py;error.py;__init__.py;monitor.py;stats_recorder.py;__init__.py;api.py;resource.py;scoring.py
+2b3f965faa33ca532d704e1434cc65d71d9cb034,Fix scoring when fewer episodes are provided,934b2acbb78e7d0052fc79b5d3421b10aa74be40,0,scoring.py
+517c2e0524760b15ebbf171ec4d74c7c85438154,Tweak error message,db4f977bcdaea99c1b2d6e5015eeae5ae0aac5e9,0,api.py
+50be1426bef09717b961acfad68cf8a4c330099c,fix number of seeds in mujoco benchmark,a8aa301202129383d090eb073ec65d4bf8576540,0,__init__.py
+3546f06bc3d208a8f1321d5cb0d32f4161f18fce,prevents race condition in multiprocessing setting,50be1426bef09717b961acfad68cf8a4c330099c,0,monitor.py
+21f8fe57bed28cab032abc3c8fbc6cfce39bde62,fix to previous commit,3546f06bc3d208a8f1321d5cb0d32f4161f18fce,0,monitor.py
+a8e4734cbc09fa89e9fc0ceabbd871b9f35f59dd,"Fix evaluation scoring bug (numpy casts generator to a single-element array containing the generator, which is a truthy object)",88f94587a2b7b231220e6204bca2848361196592,0,scoring.py
+c46008bfae0fd2458c96fe043dfde183c897c9c5,Fix up benchmark runner to use new benchmark format,a780b755561b196db8bbcd47726b97a293f34e66,0,benchmark_runner
+2dba05ac0a1effbce612fe4f62509a80cb8b63ba,Minor bug computing sources,1f7c6464b739487d2942fce9c9177d6033fd0b85,0,scoring.py
+bee6be5632139154e72a4b944a47cc518f8512e9,Typo in source indexes,2dba05ac0a1effbce612fe4f62509a80cb8b63ba,0,scoring.py
+e84bd0ffe1f98efca057dde34244a82fa6486090,"Algorithmic refactor (#383)
+
+* Refactor/document algorithmic environments and add tests.
+
+* test for 3 row addition
+
+* Fix failing rollout test by reinserting quirk in reversedAddition env
+
+* todo regarding addition3-v0
+
+* Fix python 3 division issues
+
+* typo fix
+
+* Re-generate python3 rollout file to account for ReversedAddition bug fix",bee6be5632139154e72a4b944a47cc518f8512e9,0,__init__.py;algorithmic_env.py;copy.py;copy_.py;duplicated_input.py;repeat_copy.py;reverse.py;reversed_addition.py;__init__.py;test_algorithmic.py;rollout_py3.json
+59b58602d4d8434ff19616ae00b6f4a4f4a43114,Fix determinism test,b3caa3f14745ec165bc515d203d5c4f2b17aea5e,0,test_monitor.py
+9940212f5d0cf4860d0dc092dc55031218de490b,Fix test return type,59b58602d4d8434ff19616ae00b6f4a4f4a43114,0,test_monitor.py
+2126be984490d521312d97be57f9f52636d6def0,"Fix error handling bug in benchmark.task_specs, store set of env ids",d83e8f8702755766c1c15a35297b40d25051d55e,0,registration.py
+53cde23ece4610cb690427ac4d172238dc1afb2d,"Fix bug in max_seconds scoring. Refactor null_score, add tests for it all",7513f6e2bd49c255112904b84ff4d531c4cd5163,0,scoring.py;scoring.py;test_scoring.py
+3ebe82f69c67cab41721d6f1a9b3217514639f6c,Fix tests after refactor,b5f774fe187ab4d9e15ded189d4d8b415468a060,0,test_scoring.py
+71af1191e01ac560a38a1bd12e921e238b9c0e3c,Fix some bugs with new partial benchmark scoring,f7a45f69532932633aa9977879ae66e0604bfff5,0,scoring.py;test_scoring.py
+9347e0611b8c16ffc3abda2b6b052844fe4cfec9,Error if no evaluations found,71af1191e01ac560a38a1bd12e921e238b9c0e3c,0,api.py
+271ef783c6d767ccf68f3331d3451c2b6f4aba31,"Fix fencepost error in scoring, make unit test actually catch this",9244bd5001c2a3f8146bd7e14784c69fdbfe2d66,0,scoring.py;test_scoring.py
+1cc33eb081b512b1ef241288885cd62c1788725e,"Fix bug shadowing initial timesteps, update tests",271ef783c6d767ccf68f3331d3451c2b6f4aba31,0,scoring.py;test_scoring.py
+c3283adda0ea76110f2e51b99527a45bbd596ee2,"Fix broken benchmark scoring when handling eval episodes, add a test",7c8f2b767cbfad9281ca68f0ea8400f339fe2601,0,scoring.py;test_scoring.py
+b5108b384ed1e29f3d241d654666b8e347f0f7b9,Fix compare in Blackjack. Keeping at -v0 since it was totally broken before,5fd1c868657a3cc1b92e02caf629a0fa340d9ed9,0,blackjack.py
+4bd03664d036843df352d0e635e7a450c612f031,Fix Blackjack reward (after fixing env in b5108b384ed1e29f3d241d654666b8e347f0f7b9),3265fcc8bafc456bc262a0a775336d7f63383caa,0,rollout.json
+b187596b22d3ef060d267efe59aac1b7e66e0a36,Fix typo,84439ab08be031a4b7330605873bced3e3da916b,0,video_recorder.py;version.py
+5dba36c68d50c6b9f8a9fd622ee56392d0034c4d,Fix benchmark score compute when a monitor file is empty,214f9fb779e3a47adfa3bfbcc194596a245fe4eb,0,scoring.py
+8fad22d51a0815ec7f10eaa25b7e9c4056f33b46,Better error messages for env semantic changes,22f091dbc5645aa9a8836856f0d3fc6af9478ff8,0,test_envs_semantics.py
+31855a97bc5e3840b919391f4191367ab3c54a1f,Better error messages for env semantic changes,cd7896b3b67251948662b2ec611c42f5028a354a,0,test_envs_semantics.py
+afd6888d2ff54896f773a7a0896434a9c04da6b6,"swap avconv / ffmpeg. ffmpeg is obsolete, so it shouldn't be evaled first (crashes on my pc) (#364)
+
+Avconv seems more likely to work for more people, so switch",c6215f190d9242985c4e7184c36aab8dd99883f9,0,video_recorder.py
+b33fc9fb85dc5c275d1d96c34eb6ce01b38422fa,Fix a bug when the benchmark result is empty,54ead345dc9c86566cfa2d608eaaa42fc47677f0,0,scoring.py
+527a73dd03203d0168907a7940a6b262ba267068,fix atari benchmarks,3aae03c2386a559be76c8af2c0b33d37bf0166b4,0,__init__.py
+5ca80a3141b3152fa43edb27f206705687cbae72,Fix format of solves for TotalReward,6d5cc8fbf1512ee9a51257205c077b979ab3843e,0,scoring.py
+2d44ed4968f079011dcc77e5a4557d23033a9c21,"Add Monitored wrapper (#434)
+
+* Add WIP Monitored wrapper
+
+* Remove irrelevant render after close monitor test
+
+* py27 compatibility
+
+* Fix test_benchmark
+
+* Move Monitored out of wrappers __init__
+
+* Turn Monitored into a function that returns a Monitor class
+
+* Fix monitor tests
+
+* Remove deprecated test
+
+* Remove deprecated utility
+
+* Prevent duplicate wrapping, add test
+
+* Fix test
+
+* close env in tests to prevent writing to nonexistent file
+
+* Disable semisuper tests
+
+* typo
+
+* Fix failing spec
+
+* Fix monitoring on semisuper tasks
+
+* Allow disabling of duplicate check
+
+* Rename MonitorManager
+
+* Monitored -> Monitor
+
+* Clean up comments
+
+* Remove cruft",dc07c7d41451fbadd98730b27b9be204c0bddc55,0,random_agent.py;benchmark_runner;live_plot.py;test_benchmark.py;core.py;semisuper.py;test_envs.py;test_safety_envs.py;error.py;__init__.py;monitor_manager.py;test_monitor.py;test_monitor_envs.py;api.py;__init__.py;monitoring.py;__init__.py;test_wrappers.py
+328ebc5c8709f95b2b002b624f2126047bafe68d,"Bug in frozen lake implementation
+
+Because of bug terminal states do not act as terminal",d20a5d02ed4c2d48f8f2571e265d5bd06ec6c5c8,0,frozen_lake.py
+63c4fb965e34017fe29eac9de7b0d2e96c0f1492,Fixed RIGHT/LEFT/DOWN/UP for Frozen Lake,328ebc5c8709f95b2b002b624f2126047bafe68d,0,frozen_lake.py
+d481151470653576bab63496d24b8499ead02e7a,Fix CEM example for Monitor wrapper change #434,5afa0b4e2caffa341af765d5b91045fdde749c03,0,cem.py
+a4637dc1ee7a43f1085f57fe59433347ce0f7634,remove typo,557c25ea5f97353fdb87de743133e7a754866d96,0,test_monitor.py
+0d02a34de2d5867c870d9a3a3e87986a080c92dd,"Remove timestep enforcement from monitor, adjust TimeLimit semantics to match existing monitor, fix test for env reuse",a4637dc1ee7a43f1085f57fe59433347ce0f7634,0,monitor_manager.py;test_monitor.py;time_limit.py
+a81a631b2eecb9485ee4eb34f67bfab58345b6e8,Add error when wrapping after configure,c3c703c6d8b434da40beef6202bf2cbdc01e50a1,0,core.py;error.py;test_wrappers.py
+85da4b7877985ac1fa65b882a59b8381868bda6f,Improve error message,a81a631b2eecb9485ee4eb34f67bfab58345b6e8,0,core.py
+69c1cda01c5e3f9b97f97b169f9bbd08847d50de,Downgrade DoubleWrap error to warning,85da4b7877985ac1fa65b882a59b8381868bda6f,0,core.py;test_monitor.py;test_wrappers.py
+2d0b4e59e8f59f6bbecb0a4ecf4347f5bc31815d,Improve error for removed decorator syntax,109b7fb0207791247b07738e6737af9763f81e19,0,monitoring.py
+4cec14144b2a190e88b346231cb1ba3f5df759c8,"Add setter for backwards compat (#446)
+
+* Add setter for backwards compat
+
+* Fix ordering and preserver backwards compat",133f1fdfdfb7a7417b31bf98745c9fec6e0a5e1b,0,registration.py
+1059ccdf0abb5b63d4ff4d379635ce4817e3d6fa,"Handle numpy types in monitor
+
+Fixes #452",4cec14144b2a190e88b346231cb1ba3f5df759c8,0,monitor_manager.py;stats_recorder.py
+bb9bbce80f104ffab792ec3f225d40f1ced10cc5,Fix deprecated Monitor API for the cem example (#453),ae8956921bf16d7da8e57b3e9546fd996853af95,0,cem.py
+a67653ccb17047ddbbb403b6a054e02469ab476c,"cartpole fix (#457)
+
+minor fixes related to configure() and cartpole",c6f337e6b6fd997e6d165d81a48f411367530205,0,core.py;cartpole.py
+522c2c532293399920743265d9bc761ed18eadb3,"Fix Taxi (upgrade -> v2) (#345)
+
+* Disallow Taxi start location = goal location
+
+* Bump version of Taxi env
+
+* Update Taxi observations in the rollout
+
+* Update Taxi reward threshold",518f4b7c4ba0a45032afdc87ac3b3be6725efee5,0,__init__.py;rollout.json;taxi.py;__init__.py
+1183e8f6b56f3fce04f09e3cef32f264956f9cae,Fixed timesteps in MinecraftHard-v0 benchmark.,522c2c532293399920743265d9bc761ed18eadb3,0,__init__.py
+26556f99fe09332771ea619ed0a56bcfc75a3b99,Fix multi-discrete sampling to be a proper uniform distribution,cde3b5e63b886ce3303f6d0d92e95560df0b887d,0,multi_discrete.py
+f13b8cc699b4135dd50485221e6313f2a968a864,fix benchmarks max_timesteps to be ints,da2dbb93766622757f74541efabf5d38cebc99ae,0,__init__.py
+ce441cd0f87308416ac83f284c6f18fbb01315e3,Logging message formatting typo,f13b8cc699b4135dd50485221e6313f2a968a864,0,api.py
+d337f4e5719bb8b49f2f9fba1501fe7749fa4d5c,"TimeLimit refactor with Monitor Simplification (#482)
+
+* fix double reset, as suggested by @jietang
+
+* better floors and ceilings
+
+* add convenience methods to monitor
+
+* add wrappers to gym namespace
+
+* allow playing Atari games, with potentially more coming in the future
+
+* simplify example in docs
+
+* Move play out of the Env
+
+* fix tests
+
+* no more deprecation warnings
+
+* remove env.monitor
+
+* monitor simplification
+
+* monitor simplifications
+
+* monitor related fixes
+
+* a few changes suggested by linter
+
+* timestep_limit fixes
+
+* keep track of gym env variables for future compatibility
+
+* timestep_limit => max_episode_timesteps
+
+* don't apply TimeLimit wrapper in make for VNC envs
+
+* Respect old timestep_limit argument
+
+* Pass max_episode_seconds through registration
+
+* Don't include deprecation warnings yet",c17ac6cc55fda4be60548e2e05b54f22e83e2c1b,0,__init__.py;__init__.py;configuration.py;__init__.py;atari_env.py;car_racing.py;registration.py;test_registration.py;__init__.py;monitor_manager.py;test_monitor.py;__init__.py;api.py;scoring.py;play.py;monitoring.py;test_wrappers.py;time_limit.py;write_rollout_data.py
